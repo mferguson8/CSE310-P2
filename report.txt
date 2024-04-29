@@ -1,16 +1,18 @@
 Name: Michael Ferguson
 Name: Cooper Anderson
 
-We were having trouble making an adjacency matrix from the graph. We used geeksforgeeks a bunch to understand how the adjacency matrixes worked based on the input we were given from the graph. There are no known bugs in our code and everything is working the way that it should. 
+We were having trouble making an adjacency matrix from the graph. We used geeksforgeeks a bunch to understand how the adjacency matrices worked based on the input we were given from the graph. We had a slight problem initially where the code was creating the matrices incorrectly, but we were able to fix that. There are no known bugs in our code and everything is working the way that it should. One thing that we did differently than normal was our choice to not use "Edge.H" or "Vertex.h" we were able to complete our project while only using main.cpp
 
-The Graph constructor takes an integer representing the number of vertices in the graph. It initializes a 2D array adj of size V x V to represent the adjacency matrix. Every spot in the matrix is initially set to 0 and changed later on if a vertice connects there.
-
-The addEdge method takes two i vertices and adds an edge between them in the adjacency matrix by setting adj[u][v] and adj[v][u] to 1. indicating that the vertice connect there on the graph
-
-The findOddDegreeVertices method finds all vertices in the graph that have an odd degree. It returns an array of these vertices, with the array ending in -1 as a marker.
+We chose to make a constructor and a destructor for our graph. The Graph constructor takes an integer representing the number of vertices in the graph. It initializes a 2D array adj of size V x V to represent the adjacency matrix. Every spot in the matrix is initially set to 0 and changed later on if a vertice connects there. The addEdge method takes two i vertices and adds an edge between them in the adjacency matrix by setting adj[u][v] and adj[v][u] to 1. indicating that the vertice connect there on the graphThe findOddDegreeVertices method finds all vertices in the graph that have an odd degree. It returns an array of these vertices, with the array ending in -1 as a marker.
 
 The dijkstra method implements Dijkstra's algorithm to find the shortest path from a source vertex to all other vertices in the graph. It returns an array of shortest path lengths.
 
 The minDistance method is a helper method used by dijkstra's algorithm to find the vertex with the minimum distance value, from the set of vertices not yet included in the shortest path tree.
 
 The main function reads a graph from a file, the file name is passed in the command line. It creates a Graph object, adds edges to it based on the file input, prints the adjacency matrix, finds and prints the vertices of odd degree, and for each vertex of odd degree, finds and prints the shortest path lengths from that vertex to all other vertices
+
+
+
+“Graph and Its Representations.” GeeksforGeeks, GeeksforGeeks, 2 Jan. 2024, www.geeksforgeeks.org/graph-and-its-representations/. 
+
+https://www.youtube.com/watch?v=_lHSawdgXpI
